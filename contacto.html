@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lorem ipsum">
+    <meta name="keywords" content="Lorem ipsum">
+    <meta name="author" content="Haldryn">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="inc/css/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="inc/css/style_print.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="inc/css/style_1024.css" />
+    <link rel="stylesheet" media="screen and (max-width: 620px)" href="inc/css/style_620.css" />
+    <link href="https://fonts.googleapis.com/css?family=Atma:700|Milonga&display=swap" rel="stylesheet">
+    <title>CONTACTO - OIDOCOCINA</title>
+
+    <script type="text/javascript">
+        var count = 2
+
+        function active_submit() {
+            count = count + 1;
+            var status = document.getElementById("subm").disabled;
+            if (count % 4 == 0) {
+                document.getElementById("subm").disabled = false;
+                document.getElementById("subm").style.backgroundColor = "#248F16";
+            } else {
+                document.getElementById("subm").disabled = true;
+                document.getElementById("subm").style.backgroundColor = "#797979";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="inc/img/logo_isotipo.png" alt="logo">
+                <h1>OIDOCOCINA</h1>
+            </a>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="articulo_rrss.html">ART_EX</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form_css">
+        <form action="#">
+            <label>Nombre <input type="text" required="required" name="nombre"></label><br>
+            <label>Email <input type="email" required="required" name="email"></label><br>
+            <label>Mensaje <textarea name="mens" required="required"></textarea></label><br>
+            <label class="container" onclick="active_submit()">Aceptar las condiciones de uso
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label><br>
+            <input type="submit" id="subm" disabled="true">
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.6815290998097!2d-0.5130368000000475!3d38.33320510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6236169e5d7029%3A0x8d4bb29ec296006c!2sIES%20Mare%20Nostrum!5e0!3m2!1ses!2ses!4v1570213222669!5m2!1ses!2ses"
+            width="50%" height="auto" style="border:0;" allowfullscreen=""></iframe>
+    </main>
+    <footer>
+        <div><small>© OIDOCOCINA 2019</small></div>
+        <div><a href="#">POLÍTICA DE PRIVACIDAD</a></div>
+
+        <div>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+        </div>
+        <div class="social">
+            <a href="https://twitter.com/?lang=es"><img src="inc/img/iconos/RRSS/twitter.png" alt="twitter"></a>
+            <br>
+            <a href="https://es-la.facebook.com/"><img src="inc/img/iconos/RRSS/facebook.png" alt="facebook"></a>
+            <br>
+            <a href="https://api.whatsapp.com/send?phone=15551234567"><img src="inc/img/iconos/RRSS/whatsapp.png" alt="whatsapp"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

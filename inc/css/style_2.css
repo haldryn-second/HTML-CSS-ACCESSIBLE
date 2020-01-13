@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.img_logo {
+    opacity: 0;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.pieza {
+    z-index: 3;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+}
+
+.fondo {
+    z-index: 2;
+    background-color: #eeeeee;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    margin: 0 auto -20px;
+    border: 0;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+}
+
+.border0 {
+    border: 8px solid #222222;
+    width: 190px;
+    height: 190px;
+    opacity: 0;
+}
+
+.border1 {
+    border-top: 8px solid #222222;
+    top: -50%;
+}
+
+.border2 {
+    border-right: 8px solid #222222;
+    right: -50%;
+}
+
+.border3 {
+    border-bottom: 8px solid #222222;
+    bottom: -50%;
+}
+
+.border4 {
+    border-left: 8px solid #222222;
+    left: -50%;
+}
+
+.base {
+    border: 8px solid #aaaaaa;
+    opacity: 0;
+    z-index: 2;
+    width: 190px;
+    height: 190px;
+}
+
+.img_logo {
+    -webkit-animation-name: imagen_coloc;
+    animation-name: imagen_coloc;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.border0 {
+    -webkit-animation-name: border0_mov;
+    -webkit-animation-duration: 0.5s;
+    animation-name: border0_mov;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
+
+.border1 {
+    -webkit-animation-name: border1_mov;
+    -webkit-animation-duration: 3s;
+    animation-name: border1_mov;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.border2 {
+    -webkit-animation-name: border2_mov;
+    -webkit-animation-duration: 3s;
+    animation-name: border2_mov;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.border3 {
+    -webkit-animation-name: border3_mov;
+    -webkit-animation-duration: 3s;
+    animation-name: border3_mov;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.border4 {
+    -webkit-animation-name: border4_mov;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-name: border4_mov;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.base_mov {
+    -webkit-animation-name: base_imp;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-name: base_imp;
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.deshacer_fondo {
+    -webkit-animation-name: des_fondo;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-name: des_fondo;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.deshaz {
+    -webkit-animation-name: deshaz;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    animation-name: deshaz;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes des_fondo {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes base_imp {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2)
+    }
+}
+
+@keyframes border0_mov {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes imagen_coloc {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        z-index: 4;
+    }
+}
+
+@keyframes border1_mov {
+    0% {
+        top: -50%;
+        transform: scale(2)
+    }
+    100% {
+        top: 0%;
+        transform: scale(1)
+    }
+}
+
+@keyframes border2_mov {
+    0% {
+        right: -50%;
+        transform: scale(4)
+    }
+    100% {
+        right: 0%;
+        transform: scale(1)
+    }
+}
+
+@keyframes border3_mov {
+    0% {
+        bottom: -50%;
+        transform: scale(2)
+    }
+    100% {
+        bottom: 0%;
+        transform: scale(1)
+    }
+}
+
+@keyframes border4_mov {
+    0% {
+        left: -50%;
+        transform: scale(4)
+    }
+    100% {
+        left: 0%;
+        transform: scale(1)
+    }
+}
+
+@keyframes deshaz {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+article {
+    width: 50%
+}

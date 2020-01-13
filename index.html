@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Descripción de la página">
+    <meta name="keywords" content="Lorem ipsum">
+    <meta name="author" content="Haldryn">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="inc/css/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="inc/css/style_print.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="inc/css/style_1024.css" />
+    <link rel="stylesheet" media="screen and (max-width: 620px)" href="inc/css/style_620.css" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Atma:700|Milonga&display=swap" rel="stylesheet">
+
+    <meta property="og:url" content="https://haldryn-second.github.io/html2/articulo_rrss.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="OIDOCOCINA" />
+    <meta property="og:description" content="Página principal de OIDOCOCINA" />
+    <meta property="og:image" content="https://haldryn-second.github.io/html2/inc/img/logo_isotipo_border.png" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Consigue el mejor lugar y el horario perfecto en tu restaurante favorito con un par de clicks">
+    <meta name="twitter:title" content="Reserva ya!!">
+    <meta name="twitter:site" content="@OIDOCOCINA">
+    <meta name="twitter:image" content="https://haldryn-second.github.io/html2/">
+    <meta name="twitter:creator" content="@adriancanales17">
+
+
+    <link href="inc/img/logo_isotipo_iconphone.png" rel="apple-touch-icon" />
+    <link href="inc/img/logo_isotipo_iconphone.png" rel="icon" sizes="192x192" />
+    <link href="inc/img/logo_isotipo_iconphone.png" rel="icon" sizes="128x128" />
+
+    <title>INICIO - OIDOCOCINA</title>
+
+    <script>
+        function accionPlay() {
+            if (!medio.paused && !medio.ended) {
+                medio.pause();
+            } else {
+                medio.play();
+            }
+        }
+
+        function iniciar() {
+            medio = document.getElementById('medio');
+            play = document.getElementById('bot_play');
+
+            play.addEventListener('click', accionPlay);
+        }
+
+        window.addEventListener('load', iniciar, false);
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <header>
+        <nav>
+            <a href="index.html"><img src="inc/img/logo_isotipo.png" alt="logo">
+                <h1>OIDOCOCINA</h1>
+            </a>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="articulo_rrss.html">ART_EX</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- <img class="carousel" src="inc/img/empty_2.jpg" alt="carousel" /> -->
+        <video id="vid" autoplay muted loop preload="auto"> 
+            <source src="inc/vids/Restaurant_mp4.webm" type='video/webm; codecs="vp8, vorbis"' /> 
+            <source src="inc/vids/Restaurant_mp4.mp4" type="video/mp4">
+            <source src="inc/vids/Restaurant_mp4.ogg" type="video/ogg">
+            <img src="inc/img/empty_2.jpg" alt="Video no soportado">   
+            Su navegador no soporta contenido multimedia.   
+        </video>
+
+        <div>
+            <audio id="medio" loop>
+            <source src="inc/mp3/Main_Theme.ogg" type="audio/ogg">
+            <source src="inc/mp3/Main_Theme.mp3" type="audio/mpeg">
+        </audio>
+
+            <button id="bot_play" class="audio">ACTIVAR/DESACTIVAR AUDIO</button>
+
+        </div>
+
+        <div class="space">
+            <h2>TÍTULO DE SECCIÓN 1</h2>
+            <section>
+                <article>
+                    <div><img src="inc/img/empty.jpg" /></div>
+                    <div>Texto de muestra bajo imagen1</div>
+                </article>
+                <article>
+                    <div><img src="inc/img/empty.jpg" alt="imagen2" /></div>
+                    <div>Texto de muestra bajo imagen2</div>
+                </article>
+            </section>
+        </div>
+
+        <div class="space">
+
+            <h2>TÍTULO DE SECCIÓN 2</h2>
+
+            <section>
+                <article>
+                    <div><img src="inc/img/empty.jpg" alt="imagen1" /></div>
+                    <div>Texto de muestra bajo imagen1</div>
+                </article>
+                <article>
+                    <div><img src="inc/img/empty.jpg" alt="imagen1" /></div>
+                    <div>Texto de muestra bajo imagen2</div>
+                </article>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div><small>© OIDOCOCINA 2019</small></div>
+        <div><a href="#">POLÍTICA DE PRIVACIDAD</a></div>
+
+        <div>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+        </div>
+        <div class="social">
+            <a href="https://twitter.com/?lang=es"><img src="inc/img/iconos/RRSS/twitter.png" alt="twitter"></a>
+            <br>
+            <a href="https://es-la.facebook.com/"><img src="inc/img/iconos/RRSS/facebook.png" alt="facebook"></a>
+            <br>
+            <a href="https://api.whatsapp.com/send?phone=15551234567"><img src="inc/img/iconos/RRSS/whatsapp.png" alt="whatsapp"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .animacion {
+            animation-duration: 2s;
+            animation-name: anim;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes anim {
+            0% {
+                transform: rotateY(0deg) scale(1);
+            }
+            25% {
+                transform: skewX(20deg) scale(1.5);
+            }
+            50% {
+                transform: skewX(0deg) scale(1);
+            }
+            75% {
+                transform: skewX(-20deg) scale(1.5);
+            }
+            100% {
+                transform: skewX(0deg) scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="animacion" src="inc/img/Larvitar_(dream_world).png">
+</body>
+
+</html>

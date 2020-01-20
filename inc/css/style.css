@@ -120,6 +120,12 @@ aside {
     line-height: 1.5em;
 }
 
+aside h2 {
+    background-color: red;
+    width: 80%;
+    clear: right
+}
+
 aside li {
     list-style-type: none;
 }

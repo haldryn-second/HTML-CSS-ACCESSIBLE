@@ -35,3 +35,7 @@ iframe {
 input[type=range] {
     display: none;
 }
+
+aside h2 {
+    clear: both
+}

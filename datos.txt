@@ -1,14 +1,14 @@
 [
 { 
 "origen": "Madrid",
-"destinos": { "destino1": "Barcelona", "destino2": "Valencia", "destino3": "Sevilla" } 
+"destinos": { "destino": "Barcelona", "destino": "Valencia", "destino": "Sevilla" } 
 },
 { 
 "origen": "Barcelona",
-"destinos": { "destino1": "Madrid", "destino2": "Zaragoza" }
+"destinos": { "destino": "Madrid", "destino": "Zaragoza" }
 },
 {
 "origen": "Alicante",
-"destinos": { "destino1": "Madrid", "destino2": "Barcelona" } 
+"destinos": { "destino": "Madrid", "destino": "Barcelona" } 
 }
 ]

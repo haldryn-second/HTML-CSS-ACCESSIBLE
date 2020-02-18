@@ -38,8 +38,14 @@ nav ul {
     display: inline;
 }
 
-nav {
+nav:nth-child(1) ul {
     font-size: 10px;
+    display: none;
+}
+
+header span {
+    padding: 0.7em;
+    display: block;
 }
 
 header img {
@@ -95,4 +101,50 @@ section {
 aside {
     display: flex;
     border-bottom: 2px groove white;
+}
+
+div ul {
+    list-style: none;
+    text-align: center
+}
+
+div ul li {
+    padding: 1em;
+}
+
+div ul li:hover {
+    padding: 1em;
+    background-color: #888;
+    color: #2B8B20!important
+}
+
+div ul li a:hover {
+    color: #2B8B20!important
+}
+
+div ul a {
+    color: white!important;
+    text-decoration: none;
+}
+
+.mobile-nav {
+    background-color: #222222;
+    font-size: 1.3rem;
+    height: 100vh;
+    padding: 1rem 0;
+    overflow: auto;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+}
+
+.nav-toggle {
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+
+aside h2 {
+    display: none
 }

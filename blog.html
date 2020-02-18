@@ -34,8 +34,9 @@
 
     <title>BLOG - OIDOCOCINA</title>
 
-    <script>
-    </script>
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -51,9 +52,31 @@
                 <li><a href="contacto.html">CONTACTO</a></li>
                 <li><a href="articulo_rrss.html">ART_EX</a></li>
             </ul>
+
         </nav>
+        <span><i class="fa fa-bars fa-2x nav-toggle"></i></span>
+        <div style="display: inline!important" class="mobile-nav">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="servicios.html">
+                    <li>Servicios</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="contacto.html">
+                    <li>Contacto</li>
+                </a>
+                <a href="articulo_rrss.html">
+                    <li>Art_Ex</li>
+                </a>
+            </ul>
+
+        </div>
     </header>
-    <main>
+    <main id="container">
         <section>
 
             <aside>
@@ -63,9 +86,12 @@
                     <h3>ARCHIVOS</h3>
 
                     <ol>
-
-                        <li><a href="#">Entrada <sup>1</sup></a></li>
-                        <li><a href="#">Entrada <sup>2</sup></a></li>
+                        <li><a href="#" id="enl_art1">Articulo 1</a></li>
+                        <li><a href="#" id="enl_art2">Articulo 2</a></li>
+                        <li><a href="#" id="enl_art3">Control de vídeo</a></li>
+                        <li><a href="#" id="enl_art4">Control de audio</a></li>
+                        <li><a href="#" id="enl_art5">Uso de canvas</a></li>
+                        <li><a href="#" id="enl_art6">Juego de canvas</a></li>
                     </ol>
                 </div>
                 <div>
@@ -84,14 +110,14 @@
 
                 <h2>ARTÍCULOS</h2>
                 <article>
-                    <h3><i>TÍTULO 2</i></h3>
+                    <h3 id="art1"><i>TÍTULO 2</i></h3>
                     <p><b>Hola Paco</b>que me han dicho que esto es un texto de prueba y nada tiene sentido y todo eso más el mes de abril<mark> texto remarcado</mark></p>
                     <iframe src="https://www.youtube.com/embed/YgZD_PjBG5Q?controls=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </article>
                 <br>
                 <hr><br>
                 <article>
-                    <h3><i>TÍTULO 1</i></h3>
+                    <h3 id="art2"><i>TÍTULO 1</i></h3>
                     <p>Como no me dejaba poner el típico texto de lorem ipsum he decidido poner este gran tocho de texto para compensar y que haga bonico en la web.
                     </p>
                     <div><img src="inc/img/hang.gif" alt="Aguanta ahí!" /></div>
@@ -99,7 +125,7 @@
                 <br>
                 <hr><br>
                 <article>
-                    <h3><i>CONTROL DE VIDEO</i></h3>
+                    <h3 id="art3"><i>CONTROL DE VIDEO</i></h3>
                     <video id="medio" width="720" height="400">
                         <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
                         <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
@@ -121,7 +147,7 @@
                 <br>
                 <hr><br>
                 <article>
-                    <h3><i>CONTROL DE AUDIO</i></h3>
+                    <h3 id="art4"><i>CONTROL DE AUDIO</i></h3>
                     <div style="display:inline">
                         <button id="audio1">Iniciar sonido ambiental 1</button>
                         <button id="audio2">Iniciar sonido ambiental 2</button>
@@ -132,7 +158,7 @@
                 <br>
                 <hr><br>
                 <article>
-                    <h3><i>USO DE CANVAS</i></h3>
+                    <h3 id="art5"><i>USO DE CANVAS</i></h3>
                     <canvas id="lienzo" width="300" height="650"> 
                             El navegador no soporta canvas 
                        </canvas>
@@ -140,7 +166,7 @@
                 <br>
                 <hr><br>
                 <article>
-                    <h3><i>JUEGO DE CANVAS</i></h3>
+                    <h3 id="art6"><i>JUEGO DE CANVAS</i></h3>
 
                     <canvas id="lienzo2" width="300" height="300"> 
                         Su navegador no soporta el elemento canvas
@@ -149,7 +175,7 @@
             </div>
         </section>
     </main>
-
+    <div id="parriba"><img class="parriba" alt="" src="inc/img/iconos/parriba.png"></div>
 
 
     <footer>
@@ -172,9 +198,15 @@
 </body>
 
 </html>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="inc/js/scroll.js"></script>
+<script src="inc/js/parriba.js"></script>
+<script src="inc/js/ham_nav.js"></script>
+<script src="inc/js/juego_canvas.js"></script>
+<script src="inc/js/canvas_audio_video.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157000840-1"></script>
+<script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 

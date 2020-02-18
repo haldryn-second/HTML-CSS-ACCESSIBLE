@@ -551,3 +551,66 @@ input[type=range].muted::-webkit-slider-thumb {
     display: inline-flex;
     box-sizing: content-box;
 }
+
+.mobile-nav {
+    display: none;
+}
+
+.parriba {
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    width: 5%;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    background-color: #222222;
+    font-size: 1.3rem;
+    height: 100vh;
+    padding: 1rem 0;
+    overflow: auto;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+}
+
+.mobile-nav-active {
+    border-left: 1px solid green;
+}
+
+.nav-toggle {
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+
+header span {
+    padding: 0.7em;
+    display: none;
+}
+
+div ul {
+    list-style: none;
+    text-align: center
+}
+
+div ul li {
+    padding: 1em;
+}
+
+div ul li:hover {
+    padding: 1em;
+    background-color: #888;
+    color: #2B8B20!important
+}
+
+div ul li a:hover {
+    color: #2B8B20!important
+}
+
+div ul a {
+    color: white!important;
+    text-decoration: none;
+}
